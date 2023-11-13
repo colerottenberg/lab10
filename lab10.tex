@@ -1,7 +1,8 @@
 \documentclass{article}
 
 \usepackage{fancyhdr}
-
+\usepackage{graphicx}
+\usepackage{float}
 \usepackage{geometry}
 \geometry{margin=1in}
 \setlength{\headheight}{49.4pt}
@@ -69,10 +70,51 @@ Omit this section for the prelab.
     \hrule
 \end{center}
 
-\textbf{1.4.1 First Section of Lab:}
-This is where I start to answer the questions in the lab.
+\textbf{10.4 Pre-Lab Requirements:} 
 
-Later on we will start to answer some discussion questions.
+Image of the spice schematic and a plot of the input and all subsequent out-
+puts (outputs of each individual stage) for a transient simulation for Jingle19
+submitted to Canvas. Include the plot of the output and a circuit schematic,
+nothing else. The schematic and plot should be appropriately labeled. Images
+that are unclear or vague will receive little to no points. Your plot must include
+the following in different plot planes: input voltage, output of the high pass
+filter, output of the variable gain amplifier, output of the buffer stage (at least
+one), and the current of both LEDs. The gain doesn’t need to be high enough
+to induce clipping in order to show that both LEDs turn on but the first LED
+should turn on.
+
+\begin{itemize}
+    \item Stage 1: Active High Pass Filter
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{activehighplot.png}
+        \caption{Active High Pass with a Gain of 10}
+    \end{figure}
+    \item Stage 2: Active High Pass Filter
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{gainstage.png}
+        \caption{Inverting Amplifier with a Gain of 15}
+    \end{figure}
+    \item Stage 3: Comparator Stage
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{compstage.png}
+        \caption{Comparator measuring current through the LED}
+    \end{figure}
+    \item Stage 4: Buffer Stage 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{buffstage.png}
+        \caption{Voltage Following Buffer Stage}
+    \end{figure}
+    \item Circuit Schematic
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{circuitdiagram.png}
+        \caption{Full Schematic of the Circuit and each stage}
+    \end{figure}
+\end{itemize}
 
 \begin{center}
     \hrule

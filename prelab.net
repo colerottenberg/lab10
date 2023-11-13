@@ -1,0 +1,32 @@
+* C:\Users\coler\Documents\uf\fall23\circuits\lab10\prelab.asc
+C1 P001 Test 0.1µ
+R1 N002 P001 3.3k
+XU1 0 N002 Vcc Vdd St1 amp_tlv27x_highVdd
+V1 Vcc 0 5
+V2 Vdd 0 -5
+XU2 0 N010 Vcc Vdd St2Out amp_tlv27x_highVdd
+R§POT St2Out N010 33k
+R4 N010 St1 2.2k
+XU3 St2Out N001 Vcc Vdd N003 LM393
+XU4 St2Out N007 Vcc Vdd N008 LM393
+R5 N007 0 1k
+R8 N005 N006 1k
+R9 N001 N005 1k
+R10 Vcc N001 1k
+R6 N006 N007 1k
+D1 N004 0 D
+D2 N009 0 D
+R2 St1 N002 333k
+R3 N004 N003 2.2k
+R7 N009 N008 2.2k
+XU5 0 N011 Vcc Vdd OUT amp_tlv27x_highVdd
+R11 OUT N011 10k
+R12 N011 St2Out 10k
+V3 Test 0 wavefile=jingle4.wav
+.model D D
+.lib C:\Users\coler\AppData\Local\LTspice\lib\cmp\standard.dio
+.tran 4
+.lib C:\Users\coler\Documents\uf\fall23\circuits\TLV271_PSPICE_AIO\TLV271.LIB
+.lib C:\Users\coler\Downloads\LM393sljc016\LM393.5_1
+.backanno
+.end
